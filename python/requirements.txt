@@ -1,0 +1,2 @@
+pytest-repeat
+numpy==1.19.0
