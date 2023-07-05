@@ -31,4 +31,34 @@ public class DemoDaoImpl implements DemoDao {
         }
 
     }
+
+    @Override
+    public int testfun1() {
+        return 10;
+    }
+
+    @Override
+    public int testfun2(int a) {
+        if(a>0){
+            return 10;
+        }else{
+            return -10;
+        }
+    }
+
+    @Override
+    public int testfun3() {
+        return 10;
+    }
+
+    @Override
+    public int testfun4(int a) {
+        if(a>0){
+            return 10;
+        }else{
+            return -10;
+        }
+    }
+
+
 }

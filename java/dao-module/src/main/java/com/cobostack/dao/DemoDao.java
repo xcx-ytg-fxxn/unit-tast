@@ -13,4 +13,12 @@ public interface DemoDao {
     int select();
 
     int select(int a);
+
+    int testfun1();
+
+    int testfun2(int a);
+
+    int testfun3();
+
+    int testfun4(int a);
 }

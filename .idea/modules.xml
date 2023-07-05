@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/java/dao-module/dao-module.iml" filepath="$PROJECT_DIR$/java/dao-module/dao-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/jacoco-multimodule-demo.iml" filepath="$PROJECT_DIR$/java/jacoco-multimodule-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/service-module/service-module.iml" filepath="$PROJECT_DIR$/java/service-module/service-module.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/unit-test.iml" filepath="$PROJECT_DIR$/.idea/unit-test.iml" />
     </modules>
   </component>

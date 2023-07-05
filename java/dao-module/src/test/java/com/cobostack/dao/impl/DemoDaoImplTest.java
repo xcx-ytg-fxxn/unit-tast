@@ -15,4 +15,16 @@ public class DemoDaoImplTest {
         DemoDao demoDao = new DemoDaoImpl();
         demoDao.select();
     }
+
+    @Test
+    public void test_testfun1(){
+        DemoDao demoDao = new DemoDaoImpl();
+        demoDao.testfun1();
+    }
+
+    @Test
+    public void test_testfun2(){
+        DemoDao demoDao = new DemoDaoImpl();
+        demoDao.testfun2(10);
+    }
 }
