@@ -44,4 +44,16 @@ public class TestNGTest {
         DemoDao demoDao = new DemoDaoImpl();
         Assert.assertEquals(demoDao.testfun2(-10),-10,"断言失败");
     }
+
+    @Test
+    public void test_testfun4_1(){
+        DemoDao demoDao = new DemoDaoImpl();
+        Assert.assertEquals(demoDao.testfun2(10),10,"断言失败");
+    }
+
+    @Test
+    public void test_testfun4_2(){
+        DemoDao demoDao = new DemoDaoImpl();
+        Assert.assertEquals(demoDao.testfun2(-10),-10,"断言失败");
+    }
 }

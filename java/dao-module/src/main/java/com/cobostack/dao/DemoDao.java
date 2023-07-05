@@ -18,4 +18,8 @@ public interface DemoDao {
 
     int testfun2(int a);
 
+    int testfun3();
+
+    int testfun4(int a);
+
 }
