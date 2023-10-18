@@ -1,21 +1,71 @@
 # content of test_sample.py
-from biz1 import *
-import random
+from biz import *
 import pytest
 import time
 
-@pytest.mark.repeat(100)
+
+def test_add0():
+    x,y = 100,1
+    num = add0(x,y)
+    assert num == 100
+
 def test_add1():
-    num = 0
-    # time.sleep(1)
-    for i in range(10):
-        print("\ncount : ", i)
-        num = add(num, 1)
-    assert num == 10
+    x,y = 100,1
+    num = add1(x,y)
+    assert num == 101
+
+def test_add2():
+    x,y = 100,1
+    num = add2(x,y)
+    assert num == 102
+
+def test_add3():
+    x,y = 100,1
+    num = add3(x,y)
+    assert num == 103
+
+def test_add4():
+    x,y = 100,1
+    num = add4(x,y)
+    assert num == 104
 
 
-@pytest.mark.repeat(1000)
+def test_random0():
+    x,y = 100,1
+    if(y>0):
+        num = add0(x,y)
+    else:
+        num = sub0(x,y)
+    assert num == 100
+
 def test_random1():
-    r = random.random()
-    print("\n number:", r)
-    assert r > 0.1
+    x,y = 100,1
+    if(y>0):
+        num = add1(x,y)
+    else:
+        num = sub1(x,y)
+    assert num == 101
+
+def test_random2():
+    x,y = 100,-1
+    if(y>0):
+        num = add2(x,y)
+    else:
+        num = sub2(x,y)
+    assert num == 102
+
+def test_random3():
+    x,y = 100,1
+    if(y>0):
+        num = add3(x,y)
+    else:
+        num = sub4(x,y)
+    assert num == 103
+
+def test_random4():
+    x,y = 100,-1
+    if(y>0):
+        num = add4(x,y)
+    else:
+        num = sub4(x,y)
+    assert num == 96
